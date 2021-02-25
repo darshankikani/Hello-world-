@@ -1,0 +1,30 @@
+<html>
+	<head>
+	</head>
+<body>
+	<form>
+		<label>Enter Number:-</label>
+		<input type="number" id="prime"><br>
+		<input type="submit" value="submit" onclick="primenumber()">
+	</form>
+	<script>
+	function primenumber(){
+	var a=document.getElementById("prime").value;
+	if (a===1){
+	alert("1 is neither prime or composite number");
+	}else if(a>1){
+		for (let i = 2; i < a; i++) {
+        if (a % i == 0) {
+            isPrime = false;
+            break;
+        }
+	}
+	if (isPrime) {
+        alert("Number is a prime number`");
+    } else {
+        alert("Number is a not prime number`");
+    }
+	}
+	</script>
+</body>
+</html>
